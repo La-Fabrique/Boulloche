@@ -1,0 +1,219 @@
+/*
+    ################################################################################
+    ##########
+    ##########              Les mobiles en portrait uniquement
+    ##########
+    ################################################################################
+
+    ################################################################################
+    ##########
+    ##########
+    ##########
+    ################################################################################
+*/
+
+@media (max-width: 1080px) and (orientation: portrait){
+    *{ padding: 0;
+        margin: 0;
+       box-sizing: border-box;
+       word-wrap: break-word;
+    }
+
+
+    body{
+        width:                  100vh;
+        max-width:              100%;
+        margin:                 0;
+        padding:                0;
+        background-color:       #00796b;
+        display:                flex;
+        flex-direction:         column;
+
+}
+
+div.paragraphe1{
+
+    width:                  80%;
+    margin:                 3% auto 0 auto;
+    background-color:       rgb(0, 153, 255);
+    border:                 solid white 6px;
+
+}
+div.paragraphe2, div.paragraphe3{
+
+    width:                  80%;
+    margin:                 3% auto 2% auto;
+    background-color:       rgb(0, 153, 255);
+    border:                 solid white 6px;
+}
+
+h1{
+    color:                  white;
+    font-size:              3em;
+    text-align:             center;
+}
+p{
+
+    color:                  white;
+    font-size:              2em;
+    text-align:             center;
+    margin:                 3%;
+
+}
+
+div.photos1, div.photos3{
+
+    display:                flex;
+    flex-direction:         column;
+    align-items:            center;
+    margin:                 1em;
+}
+
+.carte, div.photo12, div.photo31, div.photo32{
+
+              width:             100%;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position:  50%;
+              height:                 0;
+              padding-top:            75%;
+              overflow:               hidden;
+              position:               relative;
+              margin:               1em;
+}
+
+.carte iframe{
+    height:                 100%!important;
+    width:                  100%!important;
+    position:               absolute;
+    top:                    0;
+    left:                   0;
+}
+
+div.photo12{background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Aspect_ratio_4_3_example.jpg");}
+div.photo31{background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Aspect_ratio_4_3_example.jpg");}
+div.photo32{background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Aspect_ratio_4_3_example.jpg");}
+
+
+
+}
+
+
+/*
+    ################################################################################
+    ##########
+    ##########              Ordinateur
+    ##########
+    ################################################################################
+
+    ################################################################################
+    ##########
+    ##########
+    ##########
+    ################################################################################
+*/
+@media (min-width: 1080px), (orientation: landscape){
+    *{ padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+
+
+    body{
+        height:            100%;
+        width:              100%;
+        margin:             0;
+        padding:            0;
+        background-color:   #00796b;
+        width:              100%;
+        height:             100%;
+        margin:             0;
+        padding:            0;
+        display:            flex;
+        flex-direction:     column;
+    }
+
+    div.paragraphe1, div.paragraphe2, div.paragraphe3{
+
+        margin:             2% 5% 5% 5%;
+        background-color:   rgb(0, 153, 255);
+
+    }
+
+            div.paragraphe1{
+
+                border:             solid 5px white;
+
+            }
+            div.paragraphe2{
+
+                border:             solid 5px white;
+                padding:            5%;
+
+            }
+    div.paragraphe3{
+
+                border:             solid 5px white;
+                padding:            3% 5% 3% 5%;
+
+            }
+
+    p{
+
+        font-size:          1.5em;
+        color:              white;
+        text-align:     center;
+
+    }
+
+    h1{
+
+        font-size:          2.5em;
+        color:              white;
+        text-align:     center;
+
+    }
+
+
+
+
+    /*
+    ################################################################################
+    ##########
+    ##########              Toutes les images
+    ##########
+    ################################################################################
+    */
+    div.photos1, div.photos3{
+        display:            flex;
+        flex-direction:     row;
+        width:              100%;
+        height:             60%;
+
+    }
+            .carte, div.photo12, div.photo31, div.photo32{
+
+              width:             100%;
+              background-size: contain;
+              background-repeat: no-repeat;
+              height:                 0;
+              padding-top:            33%;
+              overflow:               hidden;
+              position:               relative;
+              margin:                 1em;
+}
+
+.carte iframe{
+    height:                 100%!important;
+    width:                  100%!important;
+    position:               absolute;
+    top:                    0;
+    left:                   0;
+}
+
+div.photo12{background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Aspect_ratio_4_3_example.jpg");}
+div.photo31{background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Aspect_ratio_4_3_example.jpg");}
+div.photo32{background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Aspect_ratio_4_3_example.jpg");}
+
+}

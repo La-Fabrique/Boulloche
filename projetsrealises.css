@@ -1,19 +1,130 @@
 /*
-    ################################################################################
-    ##########
-    ##########              Mobile & autres
-    ##########
-    ################################################################################
+ # ##################################################*#############################
+ ##########
+ ##########              Les mobiles en portrait uniquement
+ ##########
+ ################################################################################
+ 
+ ################################################################################
+ ##########
+ ##########
+ ##########
+ ################################################################################
+ */
 
-    ################################################################################
-    ##########
-    ##########
-    ##########
-    ################################################################################
-*/
+@media (max-width: 1080px) and (orientation: portrait){
+	*{ padding: 0;
+		margin: 0;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	
+	body{
+		height:            100%;
+		width:              100%;
+		margin:             0;
+		padding:            0;
+		background-color:   #121212;
+		
+	}
+	
+	div.texte{
+		width:              100%;
+		height:             100%;
+		margin:             0;
+		padding:            0;
+		display:            -webkit-box;
+		display:            -ms-flexbox;
+		display:            flex;
+		-webkit-box-orient:     vertical;
+		-webkit-box-direction:     normal;
+		-ms-flex-direction:     column;
+		flex-direction:     column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	
+	div.paragraphe1,{
+		border:             solid 5px white;
+		height:             20%;
+		width:              100%;
+	}
+	
+	.paragraphe1{
+		font-size:          1em;
+		color:              white;
+		text-align:     center;
+		width:          100%;
+		padding-bottom: 2%;
+		
+	}
+	
+	div.paragraphe2{
+		display:            flex;
+		flex-wrap: wrap;
+		flex-direction:     line;
+		margin :	5% auto 5% auto;
+		height :		70vh;
+		width :			80vw;
+		border:             solid 5px white;
+		background-color : grey;
+	}
+	.paragraphe2{
+		font-size:          1.5em;
+		color:              white;
+		text-align:     center;
+		width:          100%;
+		padding-bottom: 2%;	
+	}
+	
+	
+	div.covid{
+		width:             100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-left: auto;
+		margin-right: auto;
+		height:                 0;
+		padding-top:            100%;
+		overflow:               hidden;
+		position:               relative;
+		background-image: url("covidm.png");
+	}
+	
+	
+	div.bannière{
+		width:             100%;
+		background-color:   #121212;
+		
+	}
+	div.logo{
+		background-image: url("logo.png");
+		padding:	0;
+		width:             60%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		padding-top:            30%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	div.attention{
+		background-image: url("projets.png");
+		padding:	0;
+		width:             60%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-top:            60%;
+		margin-left: 50%;
+		margin-right: 50%;
+	}
+}
 
-@media all and (max-width: 480px){
-    *{ padding: 0;
+
+@media (min-width: 1080px), (orientation: landscape){
+	*{ padding: 0;
         margin: 0;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
@@ -25,67 +136,8 @@
         width:              100%;
         margin:             0;
         padding:            0;
-    }
-
-    div.texte{
-        background-color:   #00796b;
-        width:              100%;
-        height:             100%;
-        margin:             0;
-        padding:            0;
-        display:            -webkit-box;
-        display:            -ms-flexbox;
-        display:            flex;
-        -webkit-box-orient:     vertical;
-        -webkit-box-direction:     normal;
-            -ms-flex-direction:     column;
-                flex-direction:     column;
-    }
-
-    div.paragraphe1{
-
-        margin:             2% 5% 5% 5%;
-        background-color:   rgb(0, 153, 255);
-        border:             solid 5px white;
-
-
-    }
-
-    .paragraphe1{
-
-        font-size:          1.5em;
-        color:              white;
-        text-align:     center;
-    }
-}            
-
-
-/*
-    ################################################################################
-    ##########
-    ##########              Ordinateur
-    ##########
-    ################################################################################
-
-    ################################################################################
-    ##########
-    ##########
-    ##########
-    ################################################################################
-*/
-@media all and (min-width: 480px){
-    *{ padding: 0;
-        margin: 0;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-    }
-
-
-    body{
-        height:            100%;
-        width:              100%;
-        margin:             0;
-        padding:            0;
+		background-color:   #121212;
+		
     }
 
     div.texte{
@@ -112,7 +164,6 @@
     }
 
 .paragraphe1{
-        background-color:   #00796b;
         font-size:          1.5em;
         color:              white;
         text-align:     center;
@@ -120,46 +171,65 @@
         padding-bottom: 2%;
 
     }
-
-
-
-
-.attention{
-
-    display:        -webkit-box;
-
-    display:        -ms-flexbox;
-
-    display:        flex;
-    -webkit-box-orient:     horizontal;
-    -webkit-box-direction:     normal;
-        -ms-flex-direction:     row;
-            flex-direction:     row;
-    width:              80%;
-    height:             40vh;
-    margin-top:         10%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack:  center;
-        -ms-flex-pack:  center;
-            justify-content:  center;
-    background-color:   #F59738;
-    border-radius: 45% 15%;
-
+    
+div.paragraphe2{
+	display:            flex;
+	flex-wrap: wrap;
+	flex-direction:     line;
+	margin :	5% auto 5% auto;
+	height :		70vh;
+	width :			80vw;
+		border:             solid 5px white;
+		background-color : grey;
+}
+.paragraphe2{
+	font-size:          1.5em;
+	color:              white;
+	text-align:     center;
+	width:          100%;
+	padding-bottom: 2%;	
 }
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 72px solid transparent;
-    border-right: 72px solid transparent;
-    border-bottom: 120px solid red;
-}
-.travaux{
 
-    font-size:      3em;
-    color:          green;
-    display:        block;
+div.covid{
+	width:             100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	height:                 0;
+	padding-top:            40%;
+	overflow:               hidden;
+	position:               relative;
+	background-image: url("covid.png");
+}
+
+
+
+div.bannière{
+	width:             100%;
+	background-color:   #121212;
+	
+}
+div.logo{
+	background-image: url("logo.png");
+	padding:	0;
+	width:             60%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-top:            5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.attention{
+	background-image: url("projets.png");
+	padding:	0;
+	width:             60%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top:            60%;
+	margin-left: 50%;
+	margin-right: 50%;
 }
 }

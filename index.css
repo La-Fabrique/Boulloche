@@ -136,6 +136,10 @@ a.horaires:hover  {background-color:rgba(204, 204, 0, 0.8);}
     font-family: "Retrochips";
     src: url("Retrochips.otf");
     }
+    {
+		font-family: "AlaskaFont";
+		src: url("Alaska Font.otf");
+	}
     
 }   
 
@@ -158,7 +162,7 @@ a.horaires:hover  {background-color:rgba(204, 204, 0, 0.8);}
 */
 @media (min-width: 1080px), (orientation: landscape){
 body{
-    height:             100vh;
+    height:             90vh;
     width:              100vw;
     margin:             auto;
 }
@@ -173,6 +177,21 @@ div.background{
     bottom:             0;
     left:               0;
     background-color:   rgba(0, 0, 0, 0.2);
+}
+
+div.footer{
+	height:             8vh;
+	width:              50vw;
+	text-align: 		center;
+	margin: 			auto;
+	background-color:              rgba(250,0,0,0.4);
+	border-radius: 		80px / 80px;
+	font-family:        "AlaskaFont";
+	font-size:          0.8vw;
+	text-align:         center;
+	color:              white;
+	font-weight: 		bold;
+	border:             solid white 2px;
 }
 /*
 ################################################################################
@@ -278,5 +297,8 @@ a.horaires:hover  {background-color:rgba(204, 204, 0, 0.8);}
 	font-family: "Retrochips";
 	src: url("Retrochips.otf");
 	}
-	
+	{
+		font-family: "AlaskaFont";
+		src: url("Alaska Font.otf");
+	}
 }	

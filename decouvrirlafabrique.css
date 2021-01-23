@@ -25,7 +25,7 @@
         max-width:              100%;
         margin:                 0;
         padding:                0;
-        background-color:       #00796b;
+        background-color:       grey;
         display:                flex;
         flex-direction:         column;
 
@@ -35,7 +35,7 @@ div.paragraphe1{
 
     width:                  80%;
     margin:                 3% auto 0 auto;
-    background-color:       rgb(0, 153, 255);
+	background-color:       #4d4d4d;
     border:                 solid white 6px;
 
 }
@@ -43,25 +43,25 @@ div.paragraphe2, div.paragraphe3{
 
     width:                  80%;
     margin:                 3% auto 2% auto;
-    background-color:       rgb(0, 153, 255);
+	background-color:       #4d4d4d;
     border:                 solid white 6px;
 }
 
 h1{
     color:                  white;
-    font-size:              3em;
+    font-size:              2em;
     text-align:             center;
 }
 p{
 
     color:                  white;
-    font-size:              2em;
+    font-size:              1em;
     text-align:             center;
     margin:                 3%;
 
 }
 
-div.photos1, div.photos3{
+div.photos1, div.photos2, div.photos3{
 
     display:                flex;
     flex-direction:         column;
@@ -69,7 +69,7 @@ div.photos1, div.photos3{
     margin:                 1em;
 }
 
-.carte, div.photo12, div.photo31, div.photo32{
+.carte, div.photo12, div.photo21, div.photo22, div.photo31, div.photo32{
 
               width:             100%;
               background-size: contain;
@@ -90,14 +90,28 @@ div.photos1, div.photos3{
     left:                   0;
 }
 
-div.photo12{background-image: url("https://github.com/la-fabrique93/boulloche/blob/master/boulloche.jpg");}
-div.photo31{background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Aspect_ratio_4_3_example.jpg");}
-div.photo32{background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Aspect_ratio_4_3_example.jpg");}
+div.logo{background-image: url("logo.png")}
+div.photo12{background-image: url("12.png");}
+div.photo21{background-image: url("21.png");}
+div.photo22{background-image: url("22.png");}
+div.photo31{background-image: url("31.png");}
+div.photo32{background-image: url("32.png");}
 
-
-
+div.bannière{
+	width:             100%;
+	background-color:	#121212;
+}
+div.logo{
+	padding:	0;
+	width:             50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-top:            30%;
+	margin-left: auto;
+	margin-right: auto
 }
 
+}
 
 /*
     ################################################################################
@@ -125,7 +139,7 @@ div.photo32{background-image: url("https://upload.wikimedia.org/wikipedia/common
         width:              100%;
         margin:             0;
         padding:            0;
-        background-color:   #00796b;
+        background-color:   grey;
         width:              100%;
         height:             100%;
         margin:             0;
@@ -137,7 +151,7 @@ div.photo32{background-image: url("https://upload.wikimedia.org/wikipedia/common
     div.paragraphe1, div.paragraphe2, div.paragraphe3{
 
         margin:             2% 5% 5% 5%;
-        background-color:   rgb(0, 153, 255);
+		background-color:   #4d4d4d;
 
     }
 
@@ -156,8 +170,8 @@ div.photo32{background-image: url("https://upload.wikimedia.org/wikipedia/common
 
                 border:             solid 5px white;
                 padding:            3% 5% 3% 5%;
-
             }
+            
 
     p{
 
@@ -175,6 +189,20 @@ div.photo32{background-image: url("https://upload.wikimedia.org/wikipedia/common
 
     }
 
+    div.bannière{
+		width:             200%;
+		background-color:	#808080;
+		
+	}
+	div.logo{
+		padding:	0;
+		width:             60%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		padding-top:            5%;
+		margin-left: auto;
+		margin-right: auto
+	}
 
 
 
@@ -185,14 +213,15 @@ div.photo32{background-image: url("https://upload.wikimedia.org/wikipedia/common
     ##########
     ################################################################################
     */
-    div.photos1, div.photos3{
+
+	div.photos1, div.photos2, div.photos3{
         display:            flex;
         flex-direction:     row;
         width:              100%;
         height:             60%;
 
     }
-            .carte, div.photo12, div.photo31, div.photo32{
+    .carte, div.photo12, div.photo21, div.photo22, div.photo31, div.photo32{
 
               width:             100%;
               background-size: contain;
@@ -211,9 +240,11 @@ div.photo32{background-image: url("https://upload.wikimedia.org/wikipedia/common
     top:                    0;
     left:                   0;
 }
-
-div.photo12{background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Aspect_ratio_4_3_example.jpg");}
-div.photo31{background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Aspect_ratio_4_3_example.jpg");}
-div.photo32{background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Aspect_ratio_4_3_example.jpg");}
+div.logo{background-image: url("logo.png")}
+div.photo12{background-image: url("12.png");}
+div.photo21{background-image: url("21.png");}
+div.photo22{background-image: url("22.png");}
+div.photo31{background-image: url("31.png");}
+div.photo32{background-image: url("32.png");}
 
 }
